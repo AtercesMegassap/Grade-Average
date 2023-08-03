@@ -11,7 +11,7 @@ app.get('/Average', (req, res) => {
 
   const gradeAverage = (grade1 + grade2 + grade3) / 3;
 
-  return res.json(`The average grade of the three subjects is ${gradeAverage}.`);
+  return res.json(`The average grade of the three subjects is ${gradeAverage.toFixed(2)}`);
 });
 
 app.listen(port, () => {
